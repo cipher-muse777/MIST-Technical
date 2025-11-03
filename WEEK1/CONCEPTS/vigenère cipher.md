@@ -4,6 +4,7 @@
 - then convert the resulting numbers back to letters to form the ciphertext
 
 - code for generating ciphertext
+  
 ```
 def generate_key(plaintext, keyword):
    key = list(keyword)
@@ -24,7 +25,9 @@ plaintext = plaintext.upper()
 keyword = keyword.upper()
 key = generate_key(plaintext, keyword)
 ```
+
 - code for decryption
+
 ```
 def vigenere_decrypt(ciphertext, key):
     decrypted = []
@@ -50,6 +53,6 @@ ciphertext = "GCYCZFMLYLEIM"
 key = "AYUSH"
 plaintext = vigenere_decrypt(ciphertext, key)
 print("Decrypted text:", plaintext)
-```
 ciphertext = vigenere_encrypt(plaintext, key)
 print("Ciphertext:", ciphertext)
+```
